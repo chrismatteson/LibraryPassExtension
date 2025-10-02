@@ -1,0 +1,61 @@
+/* Toast notification styles */
+.library-pass-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2147483647 !important;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.library-pass-toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.library-pass-toast-content {
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.library-pass-toast-content:hover {
+  background: #1d4ed8;
+}
+
+.library-pass-toast-icon {
+  font-size: 20px;
+}
+
+.library-pass-toast-text {
+  font-weight: 500;
+}
+
+.library-pass-toast-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  line-height: 1;
+}
+
+.library-pass-toast-close:hover {
+  opacity: 1;
+}
